@@ -1,0 +1,54 @@
+h1{
+    font-weight: normal;
+    /* display: inline; */
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .text-content {
+    flex: 1;
+    min-width: 300px; 
+    padding: 20px;
+  }
+  
+  .services {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+      
+  }
+  .service-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #1f2d3d;
+    color: white;
+    flex: 1 1 calc(30% - 40px); 
+    box-sizing: border-box;
+    height: calc(50% - 40px);
+  }
+  /* .service-icon{
+    display: inline;
+  } */
+  h3{
+    display: inline;
+  }
+
+  @media (max-width: 480px) {
+    body{
+        padding: 5%;
+    }
+    .service-card {
+      flex: 1 1 100%; 
+      height: auto; 
+    }
+  }
